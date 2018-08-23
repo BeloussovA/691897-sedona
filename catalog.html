@@ -22,13 +22,52 @@
 			<h1 class="visually-hidden">Гостиницы</h1>
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр поиска гостиницы</h2>
-				<div class="filters-form">
-					<form>
-						<div>
-							
-						</div>
-					</form>
-				</div>
+				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+					<div class="infrastructure">
+	          <fieldset>
+	            <legend>Инфраструктура:</legend>
+	            <ul>
+	            	<li class="filter-option">
+	            		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
+	                <label for="pool">Бассейн</label>
+	              </li>
+	              <li class="filter-option">
+	                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking-place" id="parking-place">
+	                <label for="parking-place">Паркинг</label>
+	              </li>
+	              <li class="filter-option">
+	                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wireless" id="wireless">
+	                <label for="wireless">WI-FI</label>
+	              </li>
+	            </ul>
+	          </fieldset>
+	        </div>
+					<div class="accommodation">
+						<fieldset>
+	            <legend>Тип жилья:</legend>
+	            <ul>
+	              <li class="filter-option">
+	                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="motel" checked>
+	                <label for="hotel">Гостиница</label>
+	              </li>
+	              <li class="filter-option">
+	                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
+	                <label for="motel">Мотель</label>
+	              </li>
+	              <li class="filter-option">
+	                <input class="visually-hidden filter-input filter-input-radio" type="checkbox" name="appartments" value="appartments" id="appartments">
+	                <label for="appartments">Апартаменты</label>
+	              </li>
+	            </ul>
+	          </fieldset>
+	        </div>
+	        <div class="calculation">
+	        	
+	        </div>
+				
+					
+								
+				</form>
 			</section>
 			<section class="sorting">
 				<h2>Найдено: 3</h2>	

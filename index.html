@@ -89,40 +89,27 @@
 					<p>
 						<label for="arrival-date">Дата заезда:</label>
 						<input class="first field" id="arrival-date" type="text" name="arrival-date" placeholder="Enter-date" value="27 апреля 2017">
+						<button type="post">Календарь</button>
 					</p>
 					<p>
 						<label for="departure-date">Дата выезда:</label>
 						<input class="second field" id="departure-date" type="text" name="arrival-date" placeholder="Enter-date" value="4 июля 2017">
+						<button type="post">Календарь</button>
 					</p>
-					<div class="half-width">
-            <label for="date">Дата доставки</label>
-            <input type="date" id="date" name="date" value="2014-12-12">
+					<div class="third-field">
+						<label for="adults">Взрослые:</label>
+						<button class="number-less">-</button>
+						<input type="text" id="adults" name="adults" value="2">
+            <button class="number-more">+</button>
           </div>
-				</form>
-	
-
-
-
-
-
-
-
-
-
-
-				<div class="modal modal-search">
-					<!--
-					<p>Дата заезда:</p>
-					<!--Здесь будет форма-->
-					<p>Дата выезда:</p>
-					<!--Здесь будет форма-->
-					<p>Взрослые:</p>
-					<!--Здесь будет форма-->
-					<p>Дети:</p>
-					<!--Здесь будет форма-->
+          <div class="fourth-field">
+						<label for="children">Дети:</label>
+						<button class="number-less">-</button>
+						<input type="text" id="children" name="children" value="0">
+            <button class="number-more">+</button>
+          </div>
 					<button type="submit">Найти</button>
-				-->
-				</div>
+				</form>
 			</section>		
 			<section class="map">
 				<img src="img/map.jpg" width="1200" height="594" alt="Карта штата">
