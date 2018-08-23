@@ -8,7 +8,7 @@
 		<header class="main-header">
 			<nav class="main-navigation">
 				<a class="main-header-logo">
-					<img src="img/logo.svg" width="140" height="71" alt="Логотип Седоны">
+					<img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седоны">
 				</a>
 				<ul class="site-navigation">
 					<li><a href="info.html">Информация</a></li>
@@ -19,8 +19,8 @@
 			</nav>
 		</header>
 		<main class="container">
-			<div class="header-bg">
-  			<img src="img/background_photo.jpg" alt="Добро пожаловать в Седону">
+			<div class="first-screen">
+  			<img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to Sedona">
 			</div>
 			<h1>Седона-небольшой городок в Аризоне, заслуживающий большего</h1>
 			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -32,28 +32,31 @@
 					<p class="featurers-item">Седона-не атракцион для туристов, там течёт своя жизнь</p>
 				</div>
 				<div class="features-images">
-					<img src="img/features-img-1.jpg" alt="Вид города">
+					<img src="img/features-img-1.jpg" width="800" height="400" alt="Вид города">
 				</div>
 			</section>
 			<section class="secondary-features">
   			<h2 class="visually-hidden">Дополнительные преимущества</h2>
   			<div class="secondary-features">
 					<h3>Жильё</h3>
+					<img src="img/icon-1.svg" width="75" height="72" alt="Жилье">	
 					<p class="secondary-features">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 				</div>	
 				<div class="secondary-features">
 					<h3>Еда</h3>
+					<img src="img/icon-3.svg" width="74" height="70" alt="Еда">
 					<p class="secondary-features">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 				</div>
 				<div class="secondary-features">
 					<h3>Сувениры</h3>
+					<img src="img/icon-2.svg" width="64" height="76" alt="Сувениры">
 					<p class="secondary-features">не только китайского, но и местного производства!</p>
 				</div>
 			</section>
 			<section class="third-features">	
 				<h2 class="visually-hidden">Преимущества</h2>
 				<div class="features-images">
-					<img src="img/features-img-2.jpg" alt="Мост дьявола">
+					<img src="img/features-img-2.jpg" width="800" height="400" alt="Мост дьявола">
 				</div>
 				<div class="features-item">
 					<h3>Там есть мост дьявола</h3>
@@ -82,7 +85,33 @@
 				<h2>Заинтересовались?</h2>
 				<p class="call-to-action">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 				<button type="button">Поиск  гостиниц в Седоне</button>
+				<form  class="hotels-search" action="https://echo.htmlacademy.ru" method="post">
+					<p>
+						<label for="arrival-date">Дата заезда:</label>
+						<input class="first field" id="arrival-date" type="text" name="arrival-date" placeholder="Enter-date" value="27 апреля 2017">
+					</p>
+					<p>
+						<label for="departure-date">Дата выезда:</label>
+						<input class="second field" id="departure-date" type="text" name="arrival-date" placeholder="Enter-date" value="4 июля 2017">
+					</p>
+					<div class="half-width">
+            <label for="date">Дата доставки</label>
+            <input type="date" id="date" name="date" value="2014-12-12">
+          </div>
+				</form>
+	
+
+
+
+
+
+
+
+
+
+
 				<div class="modal modal-search">
+					<!--
 					<p>Дата заезда:</p>
 					<!--Здесь будет форма-->
 					<p>Дата выезда:</p>
@@ -92,23 +121,24 @@
 					<p>Дети:</p>
 					<!--Здесь будет форма-->
 					<button type="submit">Найти</button>
+				-->
 				</div>
 			</section>		
 			<section class="map">
-				<img src="img/map.jpg" width="1200" height="590" alt="Карта штата">
+				<img src="img/map.jpg" width="1200" height="594" alt="Карта штата">
 			</section>
 		</main>
 		<footer class="main-footer">
 			<a class="footer-first-link" href="#">#VISITSEDONA</a>
 			<div class="footer-social">
 				<ul>
-					<li><a class="social-button" href="#">Twitter</a></li>
-					<li><a class="social-button" href="#">Facebook</a></li>
-					<li><a class="social-button" href="#">Youtube</a></li>
+					<li><a class="social-button" href="#">Twitter<img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a></li>
+					<li><a class="social-button" href="#">Facebook<img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
+					<li><a class="social-button" href="#">Youtube<img src="img/youtube.svg" width="20" height="16" alt="Youtube"></a></li>
 				</ul>
 			</div>
 			<p class="footer-copyright">
-				<a class="footer-second-link" href="https://htmlacademy.ru/intensive/htmlcss">WEBSITE BY<img src="img/logo-name.svg width="115" height="40" alt="HTML Academy"></a>
+				<a class="footer-second-link" href="https://htmlacademy.ru/intensive/htmlcss">WEBSITE BY<img src="img/logo-htmlacademy.svg" width="115" height="40" alt="HTML Academy"></a>
 			</p>
 		</footer>		
   </body>
