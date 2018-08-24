@@ -22,8 +22,10 @@
 			<div class="first-screen">
   			<img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to Sedona">
 			</div>
-			<h1>Седона-небольшой городок в Аризоне, заслуживающий большего</h1>
-			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+			<div class="tagline">
+				<h1>Седона-небольшой городок в Аризоне, заслуживающий большего</h1>
+				<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+			</div>	
 			<section class="features">
 				<h2 class="visually-hidden">Преимущества</h2>
 				<div class="features-item">
@@ -86,29 +88,35 @@
 				<p class="call-to-action">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 				<button type="button">Поиск  гостиниц в Седоне</button>
 				<form  class="hotels-search" action="https://echo.htmlacademy.ru" method="post">
-					<p>
-						<label for="arrival-date">Дата заезда:</label>
-						<input class="first field" id="arrival-date" type="text" name="arrival-date" placeholder="Enter-date" value="27 апреля 2017">
-						<button type="post">Календарь</button>
-					</p>
-					<p>
-						<label for="departure-date">Дата выезда:</label>
-						<input class="second field" id="departure-date" type="text" name="arrival-date" placeholder="Enter-date" value="4 июля 2017">
-						<button type="post">Календарь</button>
-					</p>
-					<div class="third-field">
-						<label for="adults">Взрослые:</label>
-						<button class="number-less">-</button>
-						<input type="text" id="adults" name="adults" value="2">
-            <button class="number-more">+</button>
-          </div>
-          <div class="fourth-field">
-						<label for="children">Дети:</label>
-						<button class="number-less">-</button>
-						<input type="text" id="children" name="children" value="0">
-            <button class="number-more">+</button>
-          </div>
-					<button type="submit">Найти</button>
+					<div class="search-form">
+						<div class="arrival">
+							<label for="arrival-date">Дата заезда:</label>
+							<input class="first field" id="arrival-date" type="text" name="arrival-date" placeholder="Enter-date" value="27 апреля 2017">
+							<button type="post">Календарь</button>
+						</div>
+						<div class="departure">
+							<label for="departure-date">Дата выезда:</label>
+							<input class="second field" id="departure-date" type="text" name="departure-date" placeholder="Enter-date" value="4 июля 2017">
+							<button type="post">Календарь</button>
+						</div>
+						<div class="visitors">
+							<div class="visitors-field">
+								<label for="adults">Взрослые:</label>
+								<button class="number-less">-</button>
+								<input type="text" id="adults" name="adults" value="2">
+		            <button class="number-more">+</button>
+		          </div>
+		          <div class="visitors-field">
+								<label for="children">Дети:</label>
+								<button class="number-less">-</button>
+								<input type="text" id="children" name="children" value="0">
+		            <button class="number-more">+</button>
+		          </div>
+		        </div>
+		        <div class="button search-button"> 
+							<button type="submit">Найти</button>
+						</div>	
+					</div>	
 				</form>
 			</section>		
 			<section class="map">
@@ -119,9 +127,9 @@
 			<a class="footer-first-link" href="#">#VISITSEDONA</a>
 			<div class="footer-social">
 				<ul>
-					<li><a class="social-button" href="#">Twitter<img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a></li>
-					<li><a class="social-button" href="#">Facebook<img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
-					<li><a class="social-button" href="#">Youtube<img src="img/youtube.svg" width="20" height="16" alt="Youtube"></a></li>
+					<li><a class="social-button social-button-tw" href="#">Twitter</a></li>
+					<li><a class="social-button social-button-fb" href="#">Facebook</a></li>
+					<li><a class="social-button social-button-yt" href="#">Youtube</a></li>
 				</ul>
 			</div>
 			<p class="footer-copyright">

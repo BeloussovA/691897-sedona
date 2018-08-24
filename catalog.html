@@ -23,50 +23,62 @@
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр поиска гостиницы</h2>
 				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
-					<div class="infrastructure">
-	          <fieldset>
-	            <legend>Инфраструктура:</legend>
-	            <ul>
-	            	<li class="filter-option">
-	            		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
-	                <label for="pool">Бассейн</label>
-	              </li>
-	              <li class="filter-option">
-	                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking-place" id="parking-place">
-	                <label for="parking-place">Паркинг</label>
-	              </li>
-	              <li class="filter-option">
-	                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wireless" id="wireless">
-	                <label for="wireless">WI-FI</label>
-	              </li>
-	            </ul>
-	          </fieldset>
-	        </div>
-					<div class="accommodation">
-						<fieldset>
-	            <legend>Тип жилья:</legend>
-	            <ul>
-	              <li class="filter-option">
-	                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="motel" checked>
-	                <label for="hotel">Гостиница</label>
-	              </li>
-	              <li class="filter-option">
-	                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
-	                <label for="motel">Мотель</label>
-	              </li>
-	              <li class="filter-option">
-	                <input class="visually-hidden filter-input filter-input-radio" type="checkbox" name="appartments" value="appartments" id="appartments" checked>
-	                <label for="appartments">Апартаменты</label>
-	              </li>
-	            </ul>
-	          </fieldset>
-	        </div>
+					<div class="filter">
+						<div class="filter-checkbox">
+		          <fieldset>
+		            <legend>Инфраструктура:</legend>
+		            <ul>
+		            	<li class="filter-option">
+		            		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
+		                <label for="pool">Бассейн</label>
+		              </li>
+		              <li class="filter-option">
+		                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking-place" id="parking-place">
+		                <label for="parking-place">Паркинг</label>
+		              </li>
+		              <li class="filter-option">
+		                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wireless" id="wireless">
+		                <label for="wireless">WI-FI</label>
+		              </li>
+		            </ul>
+		          </fieldset>
+		        </div>
+						<div class="filter-checkbox">
+							<fieldset>
+		            <legend>Тип жилья:</legend>
+		            <ul>
+		              <li class="filter-option">
+		                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="motel" checked>
+		                <label for="hotel">Гостиница</label>
+		              </li>
+		              <li class="filter-option">
+		                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
+		                <label for="motel">Мотель</label>
+		              </li>
+		              <li class="filter-option">
+		                <input class="visually-hidden filter-input filter-input-radio" type="checkbox" name="appartments" value="appartments" id="appartments" checked>
+		                <label for="appartments">Апартаменты</label>
+		              </li>
+		            </ul>
+		          </fieldset>
+		        </div>
+		      </div> 
 	        <div class="calculation">
-	        	
-	        </div>
-				
-					
-								
+	        	<div class="calculation-input">
+	        		<div class="cal-from">
+	        			<label for="from">От</label>
+	        			<input class="cal-input input-from" type="text" name="from" id="from" value="0">
+	        		</div>
+	        		<div class="cal-before">
+	        			<label for="before">До</label>
+	        			<input class="cal-input input-before" type="text" name="before" id="before" value="3000">
+	        		</div>
+	        	</div>
+	        	<div class="slider">
+	        		<span class="first-slider"></span>
+	        		<span class="second-slider"></span>	
+	        	</div>
+	        </div>									
 				</form>
 			</section>
 			<section class="sorting">
@@ -79,9 +91,9 @@
 						<li><a href="#">по рейтингу</a></li>
 					</ul>
 				</div>
-				<div>
-					<a href="#">Вверх<img src="img/icon-up-dir.svg" width="11" height="10" alt="Вверх"></a>
-					<a href="#">Вниз<img src="img/icon-down-dir.svg" width="11" height="10" alt="Вниз"></a>
+				<div class="scroll-elements">
+					<span class="up-element">"Вверх"</span>
+					<span class="down-element">"Вниз"</span>
 				</div>
 			</section>		
 			<section class="hotel-list">
@@ -102,10 +114,12 @@
 						</div>
 					</div>
 					<div class="hotel-raiting">
-						<img src="img/star.svg" width="11" height="10" alt="Star">
-						<img src="img/star.svg" width="11" height="10" alt="Star">
-						<img src="img/star.svg" width="11" height="10" alt="Star">
-						<img src="img/star.svg" width="11" height="10" alt="Star">
+						<div class="raiting-stars stars">
+							<span class="star">4 звезды</span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+						</div>	
 						<p>Рейтинг: 8,5</p>
 					</div>
 				</div>
@@ -125,9 +139,11 @@
 						</div>
 					</div>
 					<div class="hotel-raiting">
-						<img src="img/star.svg" width="11" height="10" alt="Star">
-						<img src="img/star.svg" width="11" height="10" alt="Star">
-						<img src="img/star.svg" width="11" height="10" alt="Star">
+						<div class="raiting-stars stars">
+							<span class="star">3 звезды</span>
+							<span class="star"></span>
+							<span class="star"></span>
+						</div>	
 						<p>Рейтинг: 8,9</p>
 					</div>
 				</div>
@@ -147,8 +163,10 @@
 						</div>
 					</div>
 					<div class="hotel-raiting">
-						<img src="img/star.svg" width="11" height="10" alt="Star">
-						<img src="img/star.svg" width="11" height="10" alt="Star">
+						<div class="raiting-stars stars">
+							<span class="star">2 звезды</span>
+							<span class="star"></span>
+						</div>	
 						<p>Рейтинг: 9,2</p>
 					</div>
 				</div>
@@ -158,9 +176,9 @@
 			<a class="footer-first-link" href="#">#VISITSEDONA</a>
 			<div class="footer-social">
 				<ul>
-					<li><a class="social-button" href="#">Twitter<img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a></li>
-					<li><a class="social-button" href="#">Facebook<img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
-					<li><a class="social-button" href="#">Youtube<img src="img/youtube.svg" width="20" height="16" alt="Youtube"></a></li>
+					<li><a class="social-button social-button-tw" href="#">Twitter</a></li>
+					<li><a class="social-button social-button-fb" href="#">Facebook</a></li>
+					<li><a class="social-button social-button-yt" href="#">Youtube</a></li>
 				</ul>
 			</div>
 			<p class="footer-copyright">
