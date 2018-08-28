@@ -1,0 +1,118 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	outline-height: 24px;
+	font-weight: 400;
+	color: #333333;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+	
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+a {
+	text-decoration: none;
+
+}
+.button {
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	border: none;
+
+}
+.call-to-action button {
+	background-color: #766357;
+	color: #ffffff;
+	text-transform: uppercase;
+}	
+.search-button button {
+	background-color: #81b3d2;
+	color: #ffffff;
+	text-transform: uppercase;
+
+
+
+
+}
+
+.main-navigation {
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation a {
+	color: #000000;
+}
+.site-navigation a:hover {
+	color: #81b3d2;
+}
+.site-navigation a:focus {
+	color: #cacaca;
+}
+
+}
+.tagline h1 {
+	font-size: 21px;
+	line-height: 26px;
+	text-align: center;
+}
+.tagline p {
+	font-size: 14px;
+	line-height: 26px;
+	color: #333333;
+	text-align: center;
+}
+
+.features-item {
+	text-align: center;	
+}
+
+.features-item h3 {
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+}
+.features-item span {
+	font-size: 14px;
+	line-height: 21px;
+
+
+}
+.secondary-features {
+	text-align: center;
+}
+.secondary-features h3 {
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.call-to-action {
+	text-align: center;
+}
+
+.call-to-action h2 {
+	font-size: 30px;
+	line-height: 32px;
+	color: #000000;
+}
+
+.time-to-stay, {
+	font-size: 14px;
+	line-height: 26px;
+	text-align: center;
+	text-transform: uppercase;
+}
