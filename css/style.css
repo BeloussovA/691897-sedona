@@ -10,7 +10,7 @@ body {
 	text-transform: uppercase;
 
 	background-color: #ffffff;
-	
+	background-image: url("img/background_photo.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
 }
@@ -41,7 +41,7 @@ a {
 }
 .search-button:action {
 	color: #5496bd;
-	}
+}
 
 .main-navigation {
 	font-size: 14px;
@@ -63,10 +63,6 @@ a {
 }
 .site-navigation a:focus {
 	color: #cacaca;
-}
-h1 {
-	text-align: center;
-}
 }
 .tagline h1 {
 	font-size: 21px;
@@ -152,5 +148,92 @@ h1 {
 }
 .footer-copyright a:focus {
 	color: #cacaca;
-	}
-
+}
+.catalog	{
+	background-color: #ffffff;
+	background-image: url("img/background_photo.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+.filter fieldset {
+	border: none;
+}
+.filter legend {
+	font-size: 14px;
+	line-height: 21px;
+}
+.filter ul {
+	list-style: none;
+}
+.calculation-input {
+	font-size: 14px;
+	line-height: 21px;
+}
+.filter-checkbox legend,
+.calculation span {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 700;
+}
+.sorting h2 {
+	font-size: 21px;
+	line-height: 26px;
+}
+.sorting span {
+	font-size: 12px;
+	line-height: 18px;
+}
+.sort-type ul {
+	list-style-type: none;
+}
+.sort-type a {
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase;	
+}
+.sort-type a:hover {
+	color: #81b3d2;
+}
+.sort-type a:focus {
+	color: #000000;
+}
+.sort-type a:action {
+	color: #cacaca;
+}
+.scroll-elements a:hover {
+	color: #000000;
+}
+.scroll-elements a:focus {
+	color: #81b3d2;
+}	
+.scroll-elements a:action {
+	color: #cacaca;
+}
+.hotel h2 {
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+.hotel-type span {
+	font-size: 14px;
+	line-height: 21px;
+	text-transform: uppercase;
+}
+.buttons {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
+	vertical-align: middle;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.stars {
+	color: #81b3d2;
+}
+.hotel-raiting p {
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	background-color: #f2f2f2;
+}
