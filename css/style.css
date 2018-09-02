@@ -10,8 +10,10 @@ body {
 	text-transform: uppercase;
 
 	background-color: #ffffff;
-	background-image: url("img/background_photo.jpg");
-	background-position: top center;
+}
+.first-screen {
+	background-image: url("../img/background_photo.jpg");
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
@@ -149,10 +151,10 @@ a {
 .footer-copyright a:focus {
 	color: #cacaca;
 }
-.catalog	{
+.filters	{
 	background-color: #ffffff;
-	background-image: url("img/background_photo.jpg");
-	background-position: top center;
+	background-image: url("../img/background_photo2.jpg");
+	background-position: center;
 	background-repeat: no-repeat;
 }
 .filter fieldset {
