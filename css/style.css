@@ -1,20 +1,20 @@
 html, 
 body {
 	min-width: 1200px;
-	min-height: 2762px;
+	height: 2762px;
 }
+
 body {
 	margin: 0;
 	padding: 0;
-
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
 	outline-height: 24px;
 	font-weight: 400;
 	color: #333333;
 	text-transform: uppercase;
-
 	background-color: #ffffff;
+
 }
 .first-screen {
 	background-image: url("../img/background_photo.jpg");
@@ -31,53 +31,52 @@ a {
 	color: #ffffff;
 	vertical-align: middle;
 	border: none;
-
 }
+
 .call-to-action button {
 	background-color: #766357;
 	color: #ffffff;
 	text-transform: uppercase;
 }	
+
 .search-button button {
 	background-color: #81b3d2;
 	color: #ffffff;
 	text-transform: uppercase;
 }
+
 .search-button:hover {
 	color: #669ec0;
 }
+
 .search-button:action {
 	color: #5496bd;
 }
+
 .main-header {
 	margin-bottom: 61px;
 
 }
 .main-navigation {
-	/*display: flex;
-	flex-direction: row;
-	justify-content: flex-start;*/
-	
 	min-height: 56px;
 	font-size: 14px;
 	line-height: 26px;
 	color: #000000;
-	
 	background-color: #ffffff;
 }
+
 .main-header-logo {
 	order: 0;
 	width: 140px;
 	height: 72px;
-/*	display: block;*/
-
 }
+
 .site-navigation {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	flex-wrap: nowrap;
-	width: 350px;
+	justify-content: space-around;
+	align-items: flex-start;
+	width: 1200px;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -86,12 +85,15 @@ a {
 .site-navigation a {
 	color: #000000;
 }
+
 .site-navigation a:hover {
 	color: #81b3d2;
 }
+
 .site-navigation a:focus {
 	color: #cacaca;
 }
+
 .tagline h1 {
 	font-size: 21px;
 	line-height: 26px;
@@ -105,6 +107,14 @@ a {
 	text-align: center;
 }
 
+.features {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+
+}
+
 .features-item {
 	text-align: center;	
 }
@@ -114,15 +124,24 @@ a {
 	line-height: 21px;
 	color: #000000;
 }
+
 .features-item span {
 	font-size: 14px;
 	line-height: 21px;
-
-
 }
+
 .secondary-features {
+	width: 400px;
+	height: 330px;
+	display: flex;
+	
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 	text-align: center;
+
 }
+
 .secondary-features h3 {
 	font-size: 21px;
 	line-height: 21px;
@@ -154,12 +173,15 @@ a {
 .footer-social ul {
   list-style: none;
 }
+
 .footer-social  a:hover {
 	color: #81b3d2;
 }
+
 .footer-social a:focus {
 	color: #cacaca;
 }
+
 .search-form label {
 	font-size: 14px;
 	line-height: 26px;
@@ -167,87 +189,109 @@ a {
 	text-align: center;
 	text-transform: uppercase;	
 }
+
 .footer-copyright {
 	text-align: center;
 	color: #000000;
 }
+
 .footer-copyright a:hover {
 	color: #81b3d2;
 }
+
 .footer-copyright a:focus {
 	color: #cacaca;
 }
+
 .filters	{
 	background-color: #ffffff;
 	background-image: url("../img/background_photo2.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 }
+
 .filter fieldset {
 	border: none;
 }
+
 .filter legend {
 	font-size: 14px;
 	line-height: 21px;
 }
+
 .filter ul {
 	list-style: none;
 }
+
 .calculation-input {
 	font-size: 14px;
 	line-height: 21px;
 }
+
 .filter-checkbox legend,
 .calculation span {
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: 700;
 }
+
 .sorting h2 {
 	font-size: 21px;
 	line-height: 26px;
 }
+
 .sorting span {
 	font-size: 12px;
 	line-height: 18px;
 }
+
 .sort-type ul {
 	list-style-type: none;
 }
+
 .sort-type a {
 	font-size: 12px;
 	line-height: 18px;
 	text-transform: uppercase;	
 }
+
 .sort-type a:hover {
 	color: #81b3d2;
 }
+
 .sort-type a:focus {
 	color: #000000;
 }
+
 .sort-type a:action {
 	color: #cacaca;
 }
+
 .scroll-elements a:hover {
 	color: #000000;
 }
+
 .scroll-elements a:focus {
 	color: #81b3d2;
 }	
+
 .scroll-elements a:action {
 	color: #cacaca;
 }
+
 .hotel h2 {
 	font-size: 21px;
 	font-weight: 700;
 	line-height: 26px;
 	text-transform: uppercase;
 }
+
 .hotel-type span {
 	font-size: 14px;
 	line-height: 21px;
 	text-transform: uppercase;
 }
+
 .buttons {
 	font-size: 14px;
 	line-height: 21px;
@@ -256,9 +300,11 @@ a {
 	text-transform: uppercase;
 	color: #ffffff;
 }
+
 .stars {
 	color: #81b3d2;
 }
+
 .hotel-raiting p {
 	font-size: 14px;
 	text-transform: uppercase;
