@@ -44,17 +44,23 @@
 				<section class="secondary-features-list">
 	  			<h2 class="visually-hidden">Дополнительные преимущества</h2>
 	  			<div class="secondary-features-item">
-	  				<img src="img/icon-1.svg" width="75" height="72" alt="Жилье">
+	  				<div class="icon-height">
+	  					<img src="img/icon-1.svg" width="75" height="72" alt="Жилье">
+						</div>
 						<h3>Жильё</h3>
 						<p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 					</div>	
 					<div class="secondary-features-item">
-						<img src="img/icon-3.svg" width="74" height="70" alt="Еда">
+						<div class="icon-height">
+							<img src="img/icon-3.svg" width="74" height="70" alt="Еда">
+						</div>
 						<h3>Еда</h3>
 						<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 					</div>
 					<div class="secondary-features-item">
-						<img src="img/icon-2.svg" width="64" height="76" alt="Сувениры">
+						<div class="icon-height">
+							<img src="img/icon-2.svg" width="64" height="76" alt="Сувениры">
+						</div>
 						<h3>Сувениры</h3>
 						<p>не только китайского, но и местного производства!</p>
 					</div>
@@ -89,18 +95,22 @@
 				<section class="call-to-action">
 					<h2>Заинтересовались?</h2>
 					<p class="call-to-action">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-					<button type="button">Поиск  гостиниц в Седоне</button>
+					<button type="button" class="button">Поиск  гостиниц в Седоне</button>
 					<form  class="hotels-search" action="https://echo.htmlacademy.ru" method="post">
 						<div class="search-form">
 							<div class="time-to-stay">
 								<label for="arrival-date">Дата заезда:</label>
-								<input class="first field" id="arrival-date" type="text" name="arrival-date" placeholder="Enter-date" value="27 апреля 2017">
-								<button type="post">Календарь</button>
+								<div class="form-calendar">
+									<input class="first field" id="arrival-date" type="text" name="arrival-date" placeholder="Enter-date" value="27 апреля 2017">
+									<button class="calendar" type="post">Календарь</button>
+								</div>	
 							</div>
 							<div class="time-to-stay">
 								<label for="departure-date">Дата выезда:</label>
-								<input class="second field" id="departure-date" type="text" name="departure-date" placeholder="Enter-date" value="4 июля 2017">
-								<button type="post">Календарь</button>
+								<div class="form-calendar">
+									<input class="second field" id="departure-date" type="text" name="departure-date" placeholder="Enter-date" value="4 июля 2017">
+									<button class="calendar" type="post">Календарь</button>
+								</div>	
 							</div>
 							<div class="visitors">
 								<div class="visitors-field">
