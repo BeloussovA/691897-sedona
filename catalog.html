@@ -29,45 +29,38 @@
 					<form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
 						<div class="filter">
 							<div class="filter-checkbox">
-			          <fieldset>
-			            <legend>Инфраструктура:</legend>
-			            <ul>
-			            	<li class="filter-option">
-			            		<label>
-			            			<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
-			            			<span class="checkbox-custom"></span>
-			            			<span class="label">Бассейн</span>
-			                </label>
-			              </li>
-			              <li class="filter-option">
-			                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking-place" id="parking-place">
-			                <label for="parking-place">Паркинг</label>
-			              </li>
-			              <li class="filter-option">
-			                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wireless" id="wireless">
-			                <label for="wireless">WI-FI</label>
-			              </li>
-			            </ul>
-			          </fieldset>
+			        <h4>Инфраструктура:</h4>
+			          <ul class="checkbox-list">
+			            <li class="checkbox">
+			            	<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
+			            	<label class="checkbox-label" for="pool">Бассейн</label>
+			            </li>
+			            <li class="checkbox">
+			              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking-place" id="parking-place">
+			              <label class="checkbox-label" for="parking-place">Паркинг</label>
+			            </li>
+			            <li class="checkbox">
+			              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wireless" id="wireless">
+			              <label class="checkbox-label" for="wireless">WI-FI</label>
+			            </li>
+			          </ul>
 			        </div>
 							<div class="filter-checkbox">
-								<fieldset>
-			            <legend>Тип жилья:</legend>
-			            <ul>
-			              <li class="filter-option">
-			                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="motel" checked>
-			                <label for="hotel">Гостиница</label>
-			              </li>
-			              <li class="filter-option">
-			                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
-			                <label for="motel">Мотель</label>
-			              </li>
-			              <li class="filter-option">
-			                <input class="visually-hidden filter-input filter-input-radio" type="checkbox" name="appartments" value="appartments" id="appartments" checked>
-			                <label for="appartments">Апартаменты</label>
-			              </li>
-			            </ul>
-			          </fieldset>
+								<h4>Тип жилья:</h4>
+			          <ul class="checkbox-list">
+			          	<li class="checkbox">
+			              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
+			              <label class="checkbox-label" for="hotel">Гостиница</label>
+			            </li>
+			            <li class="checkbox">
+			              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
+			              <label class="checkbox-label" for="motel">Мотель</label>
+			            </li>
+			            <li class="checkbox">
+			              <input class="visually-hidden filter-input filter-input-radio" type="checkbox" name="appartments" value="appartments" id="appartments" checked>
+			              <label class="checkbox-label" for="appartments">Апартаменты</label>
+			            </li>
+			          </ul>
 			        </div>
 			      </div> 
 		        <div class="calculation">

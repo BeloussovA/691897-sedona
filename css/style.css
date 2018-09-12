@@ -321,6 +321,10 @@ display: flex;
   text-align: center;
 }
 
+.social-button {
+	text-indent: -9999px;
+}
+
 .social-button-tw {
 	width: 18px;
 	height: 17px;
@@ -496,44 +500,36 @@ display: flex;
 	margin-bottom: 31px;
 }
 
-.filter-input-checkbox {
-	display: none;
+.checkbox {
+	margin-bottom: 15px;
 }
 
-.checkbox-custom {
+.checkbox-label {
+	display: block;
+	padding-left: 40px;
 	position: relative;
+} 
+
+.checkbox-label:before { 
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: -5px;
 	width: 23px;
 	height: 23px;
-	border: 2px solid #ffffff;
-	border-radius: 2px;
 }
 
-.checkbox-custom {
-	position: relative;      
-	width: 20px;             
-	height: 20px;            
-	border: 2px solid #ccc;
-	border-radius: 3px;
+.checkbox input[type="checkbox"] + .checkbox-label:before {
+	background: url(../img/checkbox-off.svg) no-repeat;
+	background-size: cover; 
 }
 
-.checkbox-custom,
-.label {
-	display: inline-block;
-	vertical-align: middle;
+.checkbox input[type="checkbox"]:checked + .checkbox-label:before {
+	width: 27px;
+	background: url(../img/checkbox-on.svg) no-repeat; 
+	background-size: cover;
 }
-
-.checkbox:checked + .checkbox-custom::before {
-	content: url("../img/checkbox-on.svg");             
-	display: block;			 
-	position: absolute;      
-	top: 2px;
-	right: 2px;
-	bottom: 2px;
-	left: 2px;
-	background: url(../img/checkbox-on.svg);     
-	border-radius: 2px;
-}
-
 
 .slider {
 	width: 100%;
@@ -692,5 +688,4 @@ span.star {
 	background-color: #f2f2f2;
 	display: inline-block;
 	padding: 5px 13px;
-
 }	
