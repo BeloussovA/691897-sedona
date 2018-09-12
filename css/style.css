@@ -38,16 +38,16 @@ a {
 	padding-top: 76px;
 	padding-bottom: 76px;
 }
-
+/*
 .button {
 	text-align: center;
 	color: #ffffff;
 	vertical-align: middle;
 	border: none;
-}
+}*/
 
 button.button {
-  width: 586px;
+  width: 568px;
   padding-top: 24px;
   padding-bottom: 20px;
   color: #ffffff;
@@ -69,11 +69,12 @@ button.calendar {
 }	
 
 .search-button button {
-	background-color: #81b3d2;
-  width: 586px;
+  background-color: #81b3d2;
+  width: 458px;
+  height: 58px;
   padding-top: 17px;
   padding-bottom: 22px;
-  padding-left: 229px;
+  padding-left: 200px;
   padding-right: 229px;
   color: #ffffff;
   font-family: "PT Sans";
@@ -81,6 +82,8 @@ button.calendar {
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
+  border: none;
 }
 
 .search-button:hover {
@@ -242,9 +245,9 @@ button.calendar {
 	position: absolute;
 	top: 100;
 	left: 50%;
-	margin-left: -293px;
+	margin-left: -284px;
 	text-align: left;
-	width: 586px;
+	width: 568px;
 	background: #ffffff;
 	box-sizing: border-box;
 	padding: 55px;
@@ -256,12 +259,37 @@ button.calendar {
 	color: #000000;
 }
 
+.time-to-stay {
+	display: flex;
+  margin-bottom: 29px;
+}
+
+button.calendar {
+  position: absolute;
+  right: -20px;
+  top: 0px;
+	background: url(../img/calendar.png) no-repeat center;
+	border: none;
+}    
+
 .form-calendar {
 	position: relative;
 }
 
 .visitors {
 display: flex;
+}
+
+.search-form input {
+	margin: 0;
+  border: none;
+  background-color: #f2f2f2;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
 }
 
 .main-footer {
@@ -293,14 +321,36 @@ display: flex;
   text-align: center;
 }
 
-/*.social-button-tw {
-	display: flex;
+.social-button-tw {
 	width: 18px;
 	height: 17px;
 	margin-left: 3px;
-	background: url(../img/twitter.svg);
+	background: url(../img/twitter.svg) no-repeat center;
+	position: absolute;
+  bottom: 15px;
+  right: 15px;
 }
-*/
+
+.social-button-fb {
+	width: 12px;
+	height: 22px;
+	margin-left: 3px;
+	background: url(../img/fb-icon.svg) no-repeat center;
+	position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.social-button-yt {
+	width: 20px;
+	height: 16px;
+	margin-left: 3px;
+	background: url(../img/youtube.svg) no-repeat center;
+	position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
 .footer-social ul {
   list-style: none;
   margin: 0;
@@ -311,11 +361,9 @@ display: flex;
 .footer-social li {
 	width: 46px;
 	height: 48px;
-	background: url(../img/twitter.svg) no-repeat center;
-
 	background-color: #81b3d2;
 	margin-right: 6px;
-
+	position: relative;
 }
 
 .footer-socila li:last-child {
@@ -445,8 +493,47 @@ display: flex;
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: 700;
-	margin-bottom: 20px;
+	margin-bottom: 31px;
 }
+
+.filter-input-checkbox {
+	display: none;
+}
+
+.checkbox-custom {
+	position: relative;
+	width: 23px;
+	height: 23px;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+}
+
+.checkbox-custom {
+	position: relative;      
+	width: 20px;             
+	height: 20px;            
+	border: 2px solid #ccc;
+	border-radius: 3px;
+}
+
+.checkbox-custom,
+.label {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.checkbox:checked + .checkbox-custom::before {
+	content: url("../img/checkbox-on.svg");             
+	display: block;			 
+	position: absolute;      
+	top: 2px;
+	right: 2px;
+	bottom: 2px;
+	left: 2px;
+	background: url(../img/checkbox-on.svg);     
+	border-radius: 2px;
+}
+
 
 .slider {
 	width: 100%;
