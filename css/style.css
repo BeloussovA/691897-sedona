@@ -49,7 +49,7 @@ a {
 button.button {
   width: 568px;
   padding-top: 24px;
-  padding-bottom: 20px;
+  padding-bottom: 71px;
   color: #ffffff;
   font-family: "PT Sans";
   font-size: 21px;
@@ -128,6 +128,7 @@ button.calendar {
 	color: #000000;
 	font-weight: 700;
 	line-height: 56px;
+	padding-left: 72px;
 }
 
 .site-navigation a:hover {
@@ -150,6 +151,7 @@ button.calendar {
 	line-height: 26px;
 	text-align: center;
 	margin-bottom: 26px;
+	padding-right: 23px;
 }
 
 .tagline p {
@@ -174,7 +176,7 @@ button.calendar {
 .features-item {
 	width: 400px;
 	text-align: center;
-	padding-top: 28px;
+	padding-top: 27px;
 	padding-left: 40px;
 	padding-right: 40px; 
 }
@@ -208,27 +210,35 @@ button.calendar {
 	width: 400px;
 	text-align: center;
 	padding-top: 60px;
-	padding-bottom: 86px;
+	padding-bottom: 68px;
 	padding-left: 40px;
 	padding-right: 40px; 
 }
 
 .icon-height {
 	height: 76px;
+	padding-bottom: 5px;
 }
 
-.secondary-features h3 {
+.secondary-features-item p {
+	padding-left: 8px;
+  padding-right: 9px;
+  line-height: 21px;
+}
+
+.secondary-features-item h3 {
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
+	padding-bottom: 3px;
 }
 
 .other-features {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	align-items: center;
 	background-color: #eeeeee;
+	padding-bottom: 42px;
 }
 
 .other-features h3 {
@@ -237,7 +247,7 @@ button.calendar {
 
 .call-to-action {
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 27px;
 	position: relative;
 }
 
