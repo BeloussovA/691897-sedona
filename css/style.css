@@ -32,6 +32,7 @@ a {
 
 .first-screen {
 	background-image: url("../img/background_photo.jpg");
+	background-position-y: -56px; 	
 	background-size: cover;
 	background-repeat: no-repeat;
 	text-align: center;
@@ -118,6 +119,8 @@ button.calendar {
 	color: #000000;
 	background-color: #ffffff;
 	position: relative;
+	padding-left: 6%;
+	padding-right: 6%;
 }
 
 .main-header-logo {
@@ -133,19 +136,32 @@ button.calendar {
 .site-navigation {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
 	align-items: flex-start;
-	width: 1200px;
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+.site-navigation li {
+	width: 22.8%;
+}
+
+.site-navigation li:nth-child(2) {
+	margin-right: 8.8%;
+}
+
+.site-navigation li:nth-child(3){
+	text-align: right;
+}
+
+.site-navigation li:nth-child(4) {
+	text-align: right;
 }
 
 .site-navigation a {
 	color: #000000;
 	font-weight: 700;
 	line-height: 56px;
-	padding-left: 72px;
 }
 
 .site-navigation a:hover {
@@ -168,7 +184,6 @@ button.calendar {
 	line-height: 26px;
 	text-align: center;
 	margin-bottom: 26px;
-	padding-right: 12px;
 }
 
 .tagline p {
@@ -200,20 +215,44 @@ button.calendar {
 
 .features-item p {
 	margin-top: 20px;
-  line-height: 24px;
+  line-height: 22px;
 }
 
 .features-item h3 {
 	font-size: 21px;
 	line-height: 21px;
 	color: #ffffff;
-	padding-left: 60px;
-   padding-right: 60px;
+	padding-left: 82px;
+   padding-right: 82px;
 }
 
 .features-item span {
 	font-size: 14px;
 	line-height: 21px;
+}
+
+p.featurers-item.city {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 2px;
+}
+
+p.featurers-item.square {
+    padding-left: 16px;
+    padding-right: 18px;
+    padding-top: 2px;
+}
+
+p.featurers-item.road {
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 2px;
+}
+
+p.featurers-item.tourists {
+    padding-left: 31px;
+    padding-right: 30px;
+    padding-top: 2px;
 }
 
 .secondary-features-list {
@@ -284,6 +323,15 @@ button.calendar {
 	font-size: 30px;
 	line-height: 32px;
 	color: #000000;
+	padding-top: 2px;
+}
+
+p.call-to-action {
+  padding-bottom: 20px;
+  padding-top: 1px;
+  padding-left: 4px;
+  padding-right: 2px;
+  line-height: 24px;
 }
 
 .time-to-stay {
