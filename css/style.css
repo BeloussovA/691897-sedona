@@ -45,7 +45,24 @@ a {
 	vertical-align: middle;
 	border: none;
 }*/
+.show-button button {
+	width: 133px;
+	height: 32px;
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	font-family: "PT Sans";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+	text-transform: uppercase;
+	background: transparent;
+}
 
+.show-button.button {
+  display: flex;
+  justify-content: center;
+  margin-top: -8px;
+}
 button.button {
   width: 568px;
   padding-top: 24px;
@@ -151,7 +168,7 @@ button.calendar {
 	line-height: 26px;
 	text-align: center;
 	margin-bottom: 26px;
-	padding-right: 23px;
+	padding-right: 12px;
 }
 
 .tagline p {
@@ -444,6 +461,17 @@ display: flex;
 	padding-right: 116px;
 }
 
+.filter-checkbox h4 {
+	width: 139px;
+	height: 13px;
+	color: #ffffff;
+	font-family: "PT Sans";
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 21px;
+	text-transform: uppercase;
+}
+
 .filter-checkbox fieldset {
 	padding: 0;
 }
@@ -569,6 +597,7 @@ span.second-slider {
 	left: 220px;
 }
 
+
 .sorting {
 	display: flex;
 	justify-content: space-between;
@@ -677,6 +706,25 @@ span.second-slider {
 	vertical-align: middle;
 	text-transform: uppercase;
 	color: #ffffff;
+	display: flex;
+}
+
+a.more-buttons {
+  display: inline-block;
+  width: 110px;
+  height: 27px;
+  text-align: center;
+  background-color: #81b3d2;
+  color: #fefefe;
+}
+
+a.reserv-buttons {
+  display: inline-block;
+  width: 142px;
+  height: 27px;
+  text-align: center;
+  background-color: #766357;
+  color: #fefefe;
 }
 
 .stars {
