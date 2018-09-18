@@ -84,6 +84,8 @@ button.calendar {
 	background-color: #766357;
 	color: #ffffff;
 	text-transform: uppercase;
+	padding-bottom: 33px;
+	border: none;
 }	
 
 .search-button button {
@@ -234,7 +236,7 @@ button.calendar {
 p.featurers-item.city {
   padding-left: 8px;
   padding-right: 8px;
-  padding-top: 2px;
+  padding-top: 3px;
 }
 
 p.featurers-item.square {
@@ -327,7 +329,7 @@ p.featurers-item.tourists {
 }
 
 p.call-to-action {
-  padding-bottom: 20px;
+  padding-bottom: 32px;
   padding-top: 1px;
   padding-left: 4px;
   padding-right: 2px;
@@ -494,7 +496,7 @@ display: flex;
 	padding-left: 72px;
 	padding-right: 72px;
 	color: #ffffff;
-	padding-top: 31px;
+	padding-top: 27px;
 }
 
 .filter {
@@ -518,6 +520,8 @@ display: flex;
 	font-weight: 700;
 	line-height: 21px;
 	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
 }
 
 .filter-checkbox fieldset {
@@ -539,6 +543,7 @@ display: flex;
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	padding-top: 36px;
 }
 
 .calculation {
@@ -683,6 +688,14 @@ span.second-slider {
 	list-style-type: none;
 }
 
+.sort-type li:nth-child(2) {
+  padding-left: 33px;
+}
+
+.sort-type li:nth-child(3) {
+  padding-left: 33px;
+}
+
 .sort-type a {
 	font-size: 12px;
 	line-height: 18px;
@@ -717,9 +730,11 @@ span.second-slider {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	padding-bottom: 30px;
+  padding-top: 30px;
 	padding-left: 72px;
 	padding-right: 72px;
-	padding-bottom: 61px; 
+	border-top: 1px solid #e5e5e5; 
 } 
 
 .hotel-left {
@@ -733,6 +748,16 @@ span.second-slider {
 	line-height: 26px;
 	text-transform: uppercase;
 	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.hotel:nth-child(4) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-type {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .hotel-type span {
@@ -794,4 +819,6 @@ span.star {
 	background-color: #f2f2f2;
 	display: inline-block;
 	padding: 5px 13px;
+  margin: 0;
+  margin-top: 47px;
 }	
