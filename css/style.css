@@ -747,8 +747,8 @@ span.second-slider {
 	align-items: center;
 	padding-left: 72px;
 	padding-right: 72px;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 31px;
+	padding-bottom: 29px;
 }
 
 .sorting-left {
@@ -759,12 +759,15 @@ span.second-slider {
 .sorting h2 {
 	font-size: 21px;
 	line-height: 26px;
-	margin-right: 49px;
+	margin-right: 47px;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .sort-type {
 	display: flex;
 	align-items: center;
+	padding-top: 1px;
 }
 
 .sort-type span {
@@ -776,6 +779,7 @@ span.second-slider {
 .sort-type ul {
 	display: flex;
 	list-style-type: none;
+	margin: 0;
 }
 
 .sort-type li:nth-child(2) {
@@ -811,12 +815,22 @@ a.sort-link-active {
 	color: #cacaca;
 }
 
+.scroll-elements a:nth-child(2) {
+	margin-left: 8px;
+	background: url(../img/icon-down-dir.svg) no-repeat;
+	/*transform: rotate(180deg);*/
+}
+
 .scroll-elements a {
 	display: inline-block;
 	width: 11px;
 	height: 10px;
 	background: url(../img/icon-up-dir.svg) no-repeat;
-	color: #cacaca;
+}
+
+.arrows-down {
+	transform: rotate(180deg);
+	margin-left: 8px;
 }
 
 .scroll-elements a:hover {
@@ -835,7 +849,7 @@ a.sort-link-active {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding-bottom: 30px;
+	padding-bottom: 27px;
   padding-top: 30px;
 	padding-left: 72px;
 	padding-right: 72px;
@@ -852,7 +866,7 @@ a.sort-link-active {
 	font-weight: 700;
 	line-height: 26px;
 	text-transform: uppercase;
-	margin-top: 0;
+	margin-top: -4px;
 	margin-bottom: 0;
 }
 
@@ -861,14 +875,15 @@ a.sort-link-active {
 }
 
 .hotel-type {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  margin-top: 7px;
+  margin-bottom: 13px;
 }
 
 .hotel-type span {
 	font-size: 14px;
 	line-height: 21px;
 	text-transform: uppercase;
+	margin-right: 35px;
 }
 
 .hotel-content {
@@ -928,5 +943,5 @@ span.star {
 	display: inline-block;
 	padding: 5px 13px;
   margin: 0;
-  margin-top: 47px;
+  margin-top: 43px;
 }	
