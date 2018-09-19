@@ -95,35 +95,39 @@
 				<section class="call-to-action">
 					<h2>Заинтересовались?</h2>
 					<p class="call-to-action">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-					<button type="button" class="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+					<button type="button" class="call-to-action-button">ПОИСК ГОСТИНИЦЫ В седоне</button>
 					<form  class="hotels-search" action="https://echo.htmlacademy.ru" method="post">
 						<div class="search-form">
 							<div class="time-to-stay">
 								<label for="arrival-date">Дата заезда:</label>
 								<div class="form-calendar">
 									<input class="first field" id="arrival-date" type="text" name="arrival-date" placeholder="Enter-date" value="27 апреля 2017">
-									<button class="calendar" type="post">Календарь</button>
+									<button class="calendar" type="button">Календарь</button>
 								</div>	
 							</div>
 							<div class="time-to-stay">
 								<label for="departure-date">Дата выезда:</label>
 								<div class="form-calendar">
 									<input class="second field" id="departure-date" type="text" name="departure-date" placeholder="Enter-date" value="4 июля 2017">
-									<button class="calendar" type="post">Календарь</button>
+									<button class="calendar" type="button">Календарь</button>
 								</div>	
 							</div>
 							<div class="visitors">
 								<div class="visitors-field">
 									<label for="adults">Взрослые:</label>
-									<button class="number-less">-</button>
-									<input type="text" id="adults" name="adults" value="2">
-			            <button class="number-more">+</button>
+									<div class="input-with-buttons">
+										<button class="number-btn" type="button">-</button>
+										<input type="text" id="adults" name="adults" value="2">
+			            	<button class="number-btn" type="button">+</button>
+			            </div>	
 			          </div>
 			          <div class="visitors-field">
 									<label for="children">Дети:</label>
-									<button class="number-less">-</button>
-									<input type="text" id="children" name="children" value="0">
-			            <button class="number-more">+</button>
+									<div class="input-with-buttons">
+										<button class="number-btn" type="button">-</button>
+										<input type="text" id="children" name="children" value="0">
+				            <button class="number-btn" type="button">+</button>
+				           </div> 
 			          </div>
 			        </div>
 			        <div class="button search-button"> 
