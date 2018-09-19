@@ -1,8 +1,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
+	font-family: "PT Sans", Arial, sans-serif;
 	outline-height: 24px;
 	font-weight: 400;
 	color: #333333;
@@ -31,13 +31,25 @@ a {
 }
 
 .first-screen {
-	background-image: url("../img/background_photo.jpg");
+	background-image: url(../img/background_photo.jpg);
 	background-position-y: -56px; 	
 	background-size: cover;
 	background-repeat: no-repeat;
 	text-align: center;
 	padding-top: 76px;
 	padding-bottom: 76px;
+	position: relative;
+}
+
+.first-screen:after {
+	width: 1201px;
+	height: 59px;
+	background: url(../img/intro-mask.svg);
+	position: absolute;
+	top: 40px;
+	bottom: 10px;
+	color: red;
+
 }
 
 .show-button button {
@@ -45,7 +57,6 @@ a {
 	height: 36px;
 	border: 2px solid #ffffff;
 	color: #ffffff;
-	font-family: "PT Sans";
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 21px;
@@ -59,12 +70,12 @@ a {
   margin-top: -8px;
   margin-right: 10px;
 }
+
 button.button {
   width: 568px;
   padding-top: 24px;
   padding-bottom: 71px;
   color: #ffffff;
-  font-family: "PT Sans";
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -107,7 +118,6 @@ button.number-btn {
   padding-left: 195px;
   padding-right: 229px;
   color: #ffffff;
-  font-family: "PT Sans";
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -250,21 +260,21 @@ p.featurers-item.city {
 }
 
 p.featurers-item.square {
-    padding-left: 16px;
-    padding-right: 18px;
-    padding-top: 2px;
+  padding-left: 16px;
+  padding-right: 18px;
+  padding-top: 2px;
 }
 
 p.featurers-item.road {
-    padding-left: 21px;
-    padding-right: 21px;
-    padding-top: 2px;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-top: 2px;
 }
 
 p.featurers-item.tourists {
-    padding-left: 31px;
-    padding-right: 30px;
-    padding-top: 2px;
+  padding-left: 31px;
+  padding-right: 30px;
+  padding-top: 2px;
 }
 
 .secondary-features-list {
@@ -378,8 +388,8 @@ button.calendar {
 }
 
 .visitors {
-display: flex;
-justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .visitors-field {
@@ -406,7 +416,6 @@ justify-content: space-between;
   border: none;
   background-color: #f2f2f2;
   color: #000000;
-  font-family: "PT Sans";
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
@@ -546,7 +555,7 @@ justify-content: space-between;
 
 .filters	{
 	background-color: #ffffff;
-	background-image: url("../img/background_photo2.jpg");
+	background-image: url(../img/background_photo2.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -578,7 +587,6 @@ justify-content: space-between;
 	width: 139px;
 	height: 13px;
 	color: #ffffff;
-	font-family: "PT Sans";
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 21px;
@@ -818,7 +826,6 @@ a.sort-link-active {
 .scroll-elements a:nth-child(2) {
 	margin-left: 8px;
 	background: url(../img/icon-down-dir.svg) no-repeat;
-	/*transform: rotate(180deg);*/
 }
 
 .scroll-elements a {
@@ -849,7 +856,7 @@ a.sort-link-active {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding-bottom: 27px;
+	padding-bottom: 26px;
   padding-top: 30px;
 	padding-left: 72px;
 	padding-right: 72px;
@@ -875,15 +882,16 @@ a.sort-link-active {
 }
 
 .hotel-type {
-  margin-top: 7px;
-  margin-bottom: 13px;
+  margin-top: 3px;
+  margin-bottom: 7px;
 }
 
 .hotel-type span {
 	font-size: 14px;
 	line-height: 21px;
 	text-transform: uppercase;
-	margin-right: 35px;
+	width: 112px;
+	display: inline-block;
 }
 
 .hotel-content {
