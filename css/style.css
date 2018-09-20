@@ -38,18 +38,17 @@ a {
 	text-align: center;
 	padding-top: 76px;
 	padding-bottom: 76px;
-	position: relative;
 }
 
 .first-screen:after {
-	width: 1201px;
-	height: 59px;
-	background: url(../img/intro-mask.svg);
-	position: absolute;
-	top: 40px;
-	bottom: 10px;
-	color: red;
-
+  content: "";
+  width: 1200px;
+  height: 59px;
+  background: url(../img/intro-mask.svg);
+  position: absolute;
+  bottom: 402px;
+  left: 352px;
+  background-size: auto;
 }
 
 .show-button button {
