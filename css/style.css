@@ -38,16 +38,17 @@ a {
 	text-align: center;
 	padding-top: 76px;
 	padding-bottom: 76px;
+	position: relative;
 }
 
 .first-screen:after {
   content: "";
   width: 1200px;
-  height: 59px;
+  height: 57px;
   background: url(../img/intro-mask.svg);
   position: absolute;
-  bottom: 402px;
-  left: 352px;
+  bottom: 0;
+  left: 0;
   background-size: auto;
 }
 
@@ -152,6 +153,7 @@ button.number-btn {
 	top: 0;
 	left: 50%;
 	margin-left: -70px;
+	z-index: 10;
 }
 
 .site-navigation {
