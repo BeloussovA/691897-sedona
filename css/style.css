@@ -479,6 +479,14 @@ button.calendar {
   text-transform: uppercase;
 }
 
+.children {
+  padding-top: 2px;
+  margin-right: -15px;
+}
+
+.adults {
+  margin-left: -1px;
+}
 .map img {
   display: block;
 }
@@ -641,7 +649,7 @@ button.calendar {
 
 .filters {
   background-color: #5a6167;
-  background-image: url(../img/background_photo2.jpg);
+  background-image: url(../img/filter-background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -839,7 +847,8 @@ span.first-slider {
   height: 22px;
   background: url(../img/filter-button.svg);
   top: -9px;
-  left: 1px;
+  left: 0px;
+  cursor: pointer;
 }
 
 span.second-slider {
@@ -850,6 +859,7 @@ span.second-slider {
   background: url(../img/filter-button.svg);
   top: -9px;
   right: 45px;
+  cursor: pointer;
 }
 
 
