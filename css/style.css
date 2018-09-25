@@ -27,7 +27,8 @@ a {
   width: 1200px;
   margin: 0 auto;
   background: #ffffff;
-  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+          box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .first-screen {
@@ -65,8 +66,12 @@ a {
 }
 
 .show-button.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: -8px;
   margin-right: 10px;
 }
@@ -146,7 +151,9 @@ button.number-btn {
 }
 
 .main-header-logo {
-  order: 0;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
   width: 140px;
   height: 72px;
   position: absolute;
@@ -157,9 +164,16 @@ button.number-btn {
 }
 
 .site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -217,9 +231,16 @@ button.number-btn {
 }
 
 .features {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background-color: #81b3d2;
   color: #ffffff;
 }
@@ -279,10 +300,19 @@ p.featurers-item.tourists {
 }
 
 .secondary-features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .secondary-features-item {
@@ -313,9 +343,16 @@ p.featurers-item.tourists {
 }
 
 .other-features {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background-color: #eeeeee;
   padding-bottom: 42px;
 }
@@ -338,7 +375,8 @@ p.featurers-item.tourists {
   text-align: left;
   width: 568px;
   background: #ffffff;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 56px;
 }
 
@@ -358,10 +396,16 @@ p.call-to-action {
 }
 
 .time-to-stay {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 29px;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 button.calendar {
@@ -385,21 +429,32 @@ button.calendar {
   height: 38px;
   line-height: 38px;
   padding-left: 13px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .visitors {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .visitors-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 54px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .input-with-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 41px;
 }
@@ -428,9 +483,14 @@ button.calendar {
 }
 
 .main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: -120px;
   background: rgba(255, 255, 255, 0.9);
   width: 100%;
@@ -439,9 +499,14 @@ button.calendar {
 }
 
 .main-footer-catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: rgba(255, 255, 255, 0.9);
   width: 100%;
   height: 120px;
@@ -457,8 +522,12 @@ button.calendar {
 }
 
 .footer-second-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 35px;
 }
 
@@ -509,6 +578,8 @@ button.calendar {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -541,8 +612,12 @@ button.calendar {
 }
 
 .footer-second-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 35px;
   font-size: 14px;
   color: #000000;
@@ -572,8 +647,12 @@ button.calendar {
 }
 
 .filter-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-left: 72px;
   padding-right: 72px;
   color: #ffffff;
@@ -582,6 +661,8 @@ button.calendar {
 }
 
 .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -648,6 +729,8 @@ button.calendar {
 }
 
 .calculation-input-wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border: 2px solid #ffffff;
   padding-top: 6px;
@@ -669,15 +752,23 @@ button.calendar {
 }
 
 .cal-from {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: baseline;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   width: 50%;
   padding-left: 67px;
 }
 
 .cal-before {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: baseline;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   width: 50%;
   margin-left: 47px;
 }
@@ -731,6 +822,9 @@ button.calendar {
 .slider {
   width: 100%;
   height: 2px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(80%, #ffffff), color-stop(20%, rgba(255, 255, 255, 0.35)));
+  background: -webkit-linear-gradient(left, #ffffff 80%, rgba(255, 255, 255, 0.35) 20%);
+  background: -o-linear-gradient(left, #ffffff 80%, rgba(255, 255, 255, 0.35) 20%);
   background: linear-gradient(to right, #ffffff 80%, rgba(255, 255, 255, 0.35) 20%);
   margin-top: 20px;
   margin-bottom: 40px;
@@ -759,9 +853,15 @@ span.second-slider {
 
 
 .sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 72px;
   padding-right: 72px;
   padding-top: 31px;
@@ -769,8 +869,12 @@ span.second-slider {
 }
 
 .sorting-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sorting h2 {
@@ -782,8 +886,12 @@ span.second-slider {
 }
 
 .sort-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 1px;
 }
 
@@ -794,6 +902,8 @@ span.second-slider {
 }
 
 .sort-type ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style-type: none;
   margin: 0;
@@ -845,7 +955,9 @@ a.sort-link-active {
 }
 
 .arrows-down {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
   margin-left: 8px;
 }
 
@@ -862,9 +974,16 @@ a.sort-link-active {
 }
 
 .hotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-bottom: 26px;
   padding-top: 30px;
   padding-left: 72px;
@@ -873,6 +992,8 @@ a.sort-link-active {
 }
 
 .hotel-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -915,6 +1036,8 @@ a.sort-link-active {
   vertical-align: middle;
   text-transform: uppercase;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
