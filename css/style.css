@@ -32,6 +32,7 @@ a {
 }
 
 .first-screen {
+	background-color: #59676c;
   background-image: url(../img/background_photo.jpg);
   background-position-y: -56px;
   background-size: cover;
@@ -639,7 +640,7 @@ button.calendar {
 }
 
 .filters {
-  background-color: #ffffff;
+  background-color: #5a6167;
   background-image: url(../img/background_photo2.jpg);
   background-position: center;
   background-repeat: no-repeat;
