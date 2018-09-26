@@ -32,7 +32,7 @@ a {
 }
 
 .first-screen {
-	background-color: #59676c;
+  background-color: #59676c;
   background-image: url(../img/background_photo.jpg);
   background-position-y: -56px;
   background-size: cover;
@@ -113,6 +113,43 @@ button.number-btn {
   line-height: 38px;
   color: #a9a9a9;
   font-weight: 700;
+}
+
+.number-btn-plus {
+  text-indent: -9999px;
+  position: relative;
+}
+
+.number-btn-plus:before {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 11px;
+  background: url(../img/plus.svg);
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  margin-left: -5px;
+  top: 50%;
+  margin-top: -5px;
+}
+
+.number-btn-minus {
+  text-indent: -9999px;
+  position: relative;
+}
+
+.number-btn-minus:before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -5.5px;
 }
 
 .search-button button {
